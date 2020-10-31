@@ -7,19 +7,21 @@
 	<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9d9b48e892.js" crossorigin="anonymous"></script>
 </head>
 <body>
 	<header>
 	<div class="firstt">
-		<li class="blak"><a href="#">INICIAR SESIÓN</a></li>
+		<li class="blak"><a href="#modal">INICIAR SESIÓN</a></li>
 		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="blank">DESCARGAR</a></li>
 	</div>
 	</header>
 <nav class="navy">
-	<figure class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
+	<figure class="logeo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
 	<ul class="menu">
 		<li><a href="home.html">INICIO</a></li>
 		<li><a href="personajes.html">PERSONAJES</a></li>
+		<li><a href="stage.html">ESCENARIOS</a></li>
 		<li><a href="puzzle.html">PUZZLE</a></li>
 		<li><a href="comentarios.html">COMENTARIOS</a></li>
 		<li><a href="#">MÁS INFORMACIÓN</a>
@@ -30,10 +32,50 @@
 		</li>
 	</ul>
 </nav>
-<div class="container"><img src="img1.jpg" width="500px">
+<div class="mural">
+	<span class="spanbtn"><button class="btn" id="button"><a href="javascript:clickmenu()" class="color"><i class="fa fa-2x fas fa-bars"></i></a></button></span>
+		<div id="menu1"> 
+			<ul class="ulm">
+				<li><a href="home.html"><i class="fas fa-caret-right"></i> INICIO</a></li>
+				<li><a href="personajes.html"><i class="fas fa-caret-right"></i> PERSONAJES</a></li>
+				<li><a href="stage.html"><i class="fas fa-caret-right"></i> ESCENARIOS</a></li>
+				<li><a href="puzzle.html"><i class="fas fa-caret-right"></i> PUZZLE</a></li>
+				<li><a href="comentarios.html"><i class="fas fa-caret-right"></i> COMENTARIOS</a></li>
+				<li><a href="reseña.html"><i class="fas fa-caret-right"></i> RESEÑAS</a></li>
+				<li><a href="videos.html"><i class="fas fa-caret-right"></i> VIDEOS</a></li>
+				</li>
+			</ul>
+		</div>
+</div>
+	<script>
+		function clickmenu() {
+			document.getElementById("menu1").classList.toggle('active');
+		}
+	</script>
+<div class="overlay" id="modal">
+	<div class="pop">
+		<div class="foto"></div>
+		<div class="forum">
+			<h1>¡Inicia Sesión!</h1>
+			<form>
+  				<label>Usuario:</label><br>
+  				<input type="text" name="user" placeholder="Usuario" max="30"><br>
+  				<label>Correo electrónico:</label><br>
+  				<input type="email" name="user" placeholder="E-mail" maxlength="30"><br>
+  				<label>Contraseña:</label><br>
+  				<input type="password" name="contra" placeholder="********" minlength="8"><br>
+  				<input type="submit" value="Enviar" id="boton">
+			</form>
+		</div>
+		<a href="#" class="off">X</a>
+	</div>
+</div>
+<div style="text-align: center;" class="fondo2">
+<div class="container"><img src="img1.jpg" class="middle">
 <h3>ESTE PRODUCTO PUEDE INCLUIR CONTENIDO NO APTO</h3>
-<h3>PARA TODAS LAS EDADES O PARA VERLO EN EL TRABAJO.</h3></div>
-<div class="container">
+<h3>PARA TODAS LAS EDADES O PARA VERLO EN EL TRABAJO.</h3></div></div>
+<div class="fondo2">
+	<div class="container">
 	<h2>Reseña tomada de: <a href="http://www.joystickcloud.com/resena-injustice-gods-among-us/">http://www.joystickcloud.com/</a></h2>
 	<p>
 		Tomando lo mejor de la última entrega de Mortal Kombat y con los más importantes personajes de DC Comics, llega a nosotros de las manos de NetherRealm Studios un  nuevo que juego nada tiene que ver con DC vs. MK, pero para que conozcas los por menores de Injustice: Gods Among Us aquí esta nuestra reseña.
@@ -62,7 +104,7 @@
 	<p>Injustice no esta exento de errores, para algunos jugadores no sera tan divertido que el modo historia sea tan corto (aproximadamente 5 o 6 horas) o que el nivel de dificultad cambie a uno más sencillo una vez que pierdes en algún combate. Por otro lado la historia deja algunas dudas si leíste el comic antes de empezar a jugar. Como último detalle tenemos el hecho de los pocos cambios que tiene con el más reciente Mortal Kombat ya sea en algunos ataques o movimientos (Batman y Scorpion), el motor gráfico y los modos de juego.</p>
 	<p>La gente de NetherRealm ha hecho un gran trabajo con Injustice, desde la historia hasta el gameplay dando como resultado un juego bastante divertido y fácil para los nuevos jugadores pero con una profundidad más que aceptable para los jugadores expertos. Uno de los mejores juegos basados en el universo de DC Comics y de los más completos en el genero de peleas en 2D.</p>
 	<p>Se reseño en la versión de Xbox 360.</p>
-	<img src="cuatrode.png" width="50%">
+	<div style="text-align: center;"><img src="cuatrode.png" width="50%"></div>
 </div>
 <div class="container">
 	<h2>Reseña tomada de: <a href="https://diariodefriki.com/2018/09/01/resena-injustice-gods-among-us/">https://diariodefriki.com</a></h2>
@@ -86,9 +128,10 @@
 	<p>
 		Este es un juego de pelea totalmente recomendado para los fans de DC y para quien quiera un juego entretenido para jugar con amigos. Aún así creo que es de esos juegos para los que se necesita un mínimo de habilidad y que quizás no sea la mejor opción para ingresar a los juegos de éste género.
 	</p>
-	<img src="dosdec.png" width='50%'>
+	<div style="text-align: center;"><img src="dosdec.png" width='50%'></div>
 </div>
-<div>
+
+<aside>
 	<table>
 		<th colspan="2">
 			Puntuaciones de reseñas
@@ -181,9 +224,33 @@
 			<td>8/10</td>
 		</tr>
 	</table>
-</div>
+</aside></div>
+
 <footer>
-	Copyright Todos los Derechos Reservados
+	<div>
+		<p>Este es un videojuego desarrollado por: </p>
+		<div class="youtube">
+			<a href="https://www.warnerbros.com/"><img src="wbgames.png" alt="Warner" class="logo"></a>
+			<a href="https://www.dccomics.com/"><img src="dc.png" alt="Dc" class="logo"></a>
+			<a href="https://www.netherrealm.com/"><img src="nreal.png" alt="Unreal" class="logo"></a>
+		</div>
+		<div >
+			<p>
+				Este juego puede adquirirlo en las siguientes plataformas:
+			</p>
+		<div class="youtube">
+			<a href="https://www.playstation.com/es-bo/games/injustice-gods-among-us-ultimate-edition-ps4/"><img src="logops.png" alt="playstation4" class="logo"></a>
+			<a href="https://marketplace.xbox.com/en-US/Product/Injustice-Gods-Among-Us/66acd000-77fe-1000-9115-d80257520829?ref=dtf.ru"><img src="xbox.png" alt="xbox one" class="logo"></a>
+			<a href="https://store.steampowered.com/app/242700/Injustice_Gods_Among_Us_Ultimate_Edition/"><img src="pc.jpg" alt="PC" class="logo"></a></div>
+		</div>
+	</div>
+	
+	<div class="youtube"><p>Copyright 2020 </p><p class="imp">&nbsp;&nbsp;By: @DC_fangirl</p><a href="https://www.facebook.com/"><img src="iface.png" alt="Facebook" class="minilog"></a>
+		<a href="https://www.instagram.com/"><img src="iinsta.png" alt="Instagram" class="minilog"></a>
+		<a href="https://twitter.com/?lang=es"><img src="itwt.png" alt="Twiter" class="minilog"></a>
+		</div>
+	<div class="youtube"><p> Todos los Derechos Reservados - Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.</p>
+	</div>
 </footer>
 </body>
 </html>

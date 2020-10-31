@@ -5,22 +5,42 @@
 	<link href='https://fonts.googleapis.com/css?family=Allerta Stencil' rel='stylesheet'>
 	<link rel="stylesheet" type="text/css" href="estilo.css">
 	<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
+	<link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<script src="https://kit.fontawesome.com/9d9b48e892.js" crossorigin="anonymous"></script>
 </head>
 <body>
+	<div class="overlay" id="modal">
+	<div class="pop">
+		<div class="foto"></div>
+		<div class="forum">
+			<h1>¡Inicia Sesión!</h1>
+			<form>
+  				<label>Usuario:</label><br>
+  				<input type="text" name="user" placeholder="Usuario" max="30"><br>
+  				<label>Correo electrónico:</label><br>
+  				<input type="email" name="user" placeholder="E-mail" maxlength="30"><br>
+  				<label>Contraseña:</label><br>
+  				<input type="password" name="contra" placeholder="********" minlength="8"><br>
+  				<input type="submit" value="Enviar" id="boton">
+			</form>
+		</div>
+		<a href="#" class="off">X</a>
+	</div>
+</div>
 	<header>
 	<div class="firstt">
-		<li class="blak"><a href="#">INICIAR SESIÓN</a></li>
-		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="blank">DESCARGAR</a></li>
+		<li class="blak"><a href="#modal">INICIAR SESIÓN</a></li>
+		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="_blank">DESCARGAR</a></li>
 	</div>
 	</header>
 <nav class="navy">
-	<figure class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
+	<figure class="logeo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
 	<ul class="menu">
 		<li><a href="home.html">INICIO</a></li>
 		<li><a href="personajes.html">PERSONAJES</a></li>
+		<li><a href="stage.html">ESCENARIOS</a></li>
 		<li><a href="puzzle.html">PUZZLE</a></li>
 		<li><a href="comentarios.html">COMENTARIOS</a></li>
 		<li><a href="#">MÁS INFORMACIÓN</a>
@@ -31,39 +51,157 @@
 		</li>
 	</ul>
 </nav>
+<div class="mural">
+		<span class="spanbtn"><button class="btn" id="button"><a href="javascript:clickmenu()" class="color"><i class="fa fa-2x fas fa-bars"></i></a></button></span>
+		<div id="menu1"> 
+			<ul class="ulm">
+				<li><a href="home.html"><i class="fas fa-caret-right"></i> INICIO</a></li>
+				<li><a href="personajes.html"><i class="fas fa-caret-right"></i> PERSONAJES</a></li>
+				<li><a href="stage.html"><i class="fas fa-caret-right"></i> ESCENARIOS</a></li>
+				<li><a href="puzzle.html"><i class="fas fa-caret-right"></i> PUZZLE</a></li>
+				<li><a href="comentarios.html"><i class="fas fa-caret-right"></i> COMENTARIOS</a></li>
+				<li><a href="reseña.html"><i class="fas fa-caret-right"></i> RESEÑAS</a></li>
+				<li><a href="videos.html"><i class="fas fa-caret-right"></i> VIDEOS</a></li>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		function clickmenu() {
+			document.getElementById("menu1").classList.toggle('active');
+		}
+	</script>
 <div>
-	<h1>Personajes jugables</h1>
-	<h1>Heroes</h1>
+	<h1 class="imp">PERSONAJES JUGABLES</h1>
 	<span class="linea"></span>
+	<h1>Héroes</h1>
+	<span class="linea2"></span>
 	<section class="galeria">
-		<a href="#image1">
-			<img src="heroes\aquaman.png" alt=""></a>
-		<a href="#image2">
-			<img src="heroes\arrow.png" alt=""></a>
-		<a href="#image3">
-			<img src="heroes\batgirl.png" alt=""></a>
-		<a href="#image4">
-			<img src="heroes\batman.png" alt=""></a>
-		<a href="#image5">
-			<img src="heroes\cyborg.png" alt=""></a>
-		<a href="#image6">
-			<img src="heroes\detective.png" alt=""></a>
-		<a href="#image7">
-			<img src="heroes\flash.png" alt=""></a>
-		<a href="#image8">
-			<img src="heroes\greenlan.png" alt=""></a>
-		<a href="#image9">
-			<img src="heroes\hawkgirl.png" alt=""></a>
-		<a href="#image10">
-			<img src="heroes\nightwing.png" alt=""></a>
-		<a href="#image11">
-			<img src="heroes\shazam.png" alt=""></a>
-		<a href="#image12">
-			<img src="heroes\superman.png" alt=""></a>
-		<a href="#image13">
-			<img src="heroes\wwoman.png" alt=""></a>
-		<a href="#image14">
-			<img src="heroes\zatanna.png" alt=""></a>
+		<div class="item">
+			<a href="#image1"><img src="heroes\aquaman.png" alt="aquaman"></a>
+			<h2>Aquaman</h2>
+			<div class="description">
+				<p class="frase">¡Mi deber es Atlantis!</p>
+				<p>Arthur Curry, también conocido como Orin Atlanson, nació como un híbrido humano/atlante en la sencilla ciudad de Amnesty Bay. Fue criado por el humilde farero Tom Curry, donde su verdadera madre era Atlanna, la reina de la Atlántida. Se le acredita como miembro fundador de la Liga de la Justicia de América.<br>
+				<b>Régimen. </b>El contacto de Aquaman con el mundo de la superficie ha sido mínimo, solo recientemente acordó alinear Atlantis con el régimen de Superman. Subyugar a Atlantis no fue fácil, pero fue necesario para conservar cierta autonomía.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image2"><img src="heroes\arrow.png" alt="green-arrow"></a>
+			<h2>Green Arrow</h2>
+			<div class="description">
+				<p class="frase">¡Este es uno para la lista de deseos!</p>
+				<p>Oliver Queen, tras el fallecimiento de su madre y sus padres, era el director ejecutivo de su propio conglomerado, Queen Industries. Esto se detendría cuando durante una fiesta en un yate, un accidente lo enviara a naufragar en una isla. Usando sus habilidades de supervivencia y competencia con un arco y una flecha, regresaría a su hogar en Star City.<br>
+				<b>Insurgencia. </b>Uno de los primeros oponentes del gobierno opresivo de Superman, Green Arrow fue derribado y asesinado durante el ascenso al poder del Alto Consejero.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image3"><img src="heroes\batgirl.png" alt="batgirl/batichica"></a>
+			<h2>Batgirl</h2>
+			<div class="description">
+				<p class="frase">Soy un verdadero dolor de cabeza, ¿eh?</p>
+				<p>Barbara, hija del comisionado de policía de Gotham, James Gordon, estaba ansiosa por seguir los pasos de su padre. Entonces Batman entró en escena y se inspiró en ambos.  Una noche, fue a una mascarada disfrazada de murciélago, donde vio convenientemente al criminal Killer Moth ser derribado por Batman en un robo fallido. Por lo tanto, comenzó su doble vida como Batgirl. Ella es una hábil atleta y una gimnasta entrenada, es una ágil adversaria que utiliza su movilidad avanzada para moverse rápidamente por el campo de batalla.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image4"><img src="heroes\batman.png" alt="batman"></a>
+			<h2>Batman</h2>
+			<div class="description">
+				<p class="frase">¡Hay líneas que no cruzamos!</p>
+				<p>Bruce Wayne es el único hijo de los empresarios Thomas y Martha Wayne. Tuvo una vida segura y hermosa, hasta que una noche fueron abatidos por un atracador. Como estaba tan profundamente traumatizado por esto, el dolor y la conmoción de Bruce se convirtieron en un instrumento de astucia y venganza.<br><b>Insurgencia. </b>Después de ser traicionado por su viejo amigo Superman, que fue drogado por El Joker, Batman se vio obligado a pasar a la clandestinidad y formar la Insurgencia. Su único objetivo es acabar con el tiránico gobierno de la Tierra por parte del Alto Consejero.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image5">
+			<img src="heroes\cyborg.png" alt="cyborg"></a>
+			<h2>Cyborg</h2>
+			<div class="description">
+				<p class="frase">¡Vamos a empezar esta fiesta!</p>
+				<p>Víctor 'Vic' Stone era el mejor jugador de fútbol de su equipo universitario. Sin embargo, cuando  Darkseid  de Apokolips comenzara su invasión a la Tierra, Vic resultaría gravemente herido durante el caos. En un último esfuerzo, Silas usó tecnología desconocida (una Caja Madre del Cuarto Mundo) para salvar la vida de Vic, dándole así un sistema de apoyo cibernético y una computadora incorporada.<br><b>Régimen. </b>Los compañeros de Cyborg, los Jóvenes Titanes, no sobrevivieron al ascenso al poder de Superman. Este trauma, junto con la influencia de otros héroes más experimentados, llevó a Cyborg a convertirse en uno de los ejecutores del régimen opresivo.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image6">
+			<img src="heroes\detective.png" alt="martian-manhunter/detective-marciano/John-Jones"></a>
+			<h2>Detective Marciano</h2>
+			<div class="description">
+				<p class="frase">¡Defenderé la Tierra!</p>
+				<p>En lo profundo del planeta Marte, residían marcianos reales de diferentes tipos, J'onn J'onzz era uno de ellos, pero un día, un terrorista desataría una supuesta "maldición" que daría lugar a un virus que profanaría a casi todos los marcianos verdes a la vista, quemándolos hasta la muerte. Marcado y traumatizado por el evento, huyó a la Tierra. De ahí, J'onn se disfrazó de detective John Jones. Cuando llegó el momento, reveló su herencia marciana como Martian Manhunter, luchando junto a la Liga de la Justicia.<br><b>Injustice: </b>La muerte de Martian Manhunter del universo Injustice fue confirmada en el cómic. Si bien su final dice que se escondió en Atlantis disfrazado de un archivero atlante, esto no está confirmado como canon.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image7">
+			<img src="heroes\flash.png" alt="The-flash"></a>
+			<h2>Flash</h2>
+			<div class="description">
+				<p class="frase">Todo el día me han recordado cómo no logré ser un héroe</p>
+				<p>Bartholomew 'Barry' Allen tuvo una vida normal, hasta que su padre fue acusado injustamente por la muerte de su madre y encarcelado. Por lo que se convirtió en científico forense en Central City para tratar de descubrir la verdad. Mientras trabajaba horas extras, Barry fue alcanzado por un rayo mientras se sumergían en productos químicos, el resultado de esto le dio una gran velocidad. Usó este poder para convertirse en The Flash, protegiendo Central City. Este asombroso potencial de sus poderes es lo que llevó a Flash a la Liga de la Justicia, convirtiéndose en miembro fundador y pilar. <br><b>Régimen. </b>Flash se unió  al gobierno de Superman en One Earth  porque creía en él. Le dijo a Shazam que al principio tenía sentido hacerlo para proteger a Iris, pero últimamente han comenzado a surgir serias dudas.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image8">
+			<img src="heroes\greenlan.png" alt="green-lantern-hall-jordan"></a>
+			<h2>Green Lantern</h2>
+			<div class="description">
+				<p class="frase">Mi voluntad es más fuerte que mi odio</p>
+				<p>Inspirado por su padre para ser piloto, Harold 'Hal' Jordan se convirtió en un piloto de pruebas popular y atrevido para Ferris Aircraft. En un evento inesperado, Hal se encontraría con una nave espacial que se estrelló cerca de su casa. Allí, un alienígena moribundo le dio un anillo de poder y una batería, lo que demuestra que Hal era digno de ser miembro del Green Lantern Corps. Desde entonces, Hal ha sido de gran ayuda para el Cuerpo, así como miembro fundador de la Liga de la Justicia.<br><b>Régimen/Yellow Lantern</b>El sentido del orden de Hal lo llevó a comprar la filosofía del régimen de Una Tierra. Ahora cree que el miedo es más efectivo que la fuerza de voluntad, y esa creencia lo ha convertido en Yellow Lantern.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image9">
+			<img src="heroes\hawkgirl.png" alt="hawkgirl/chica-halcon"></a>
+			<h2>Hawkgirl</h2>
+			<div class="description">
+				<p class="frase">Es hora de bajar el martillo</p>
+				<p>Desde el antiguo Egipto, Chay-Ara y su esposo Kha-Tarr fueron prósperos gobernantes de su ciudad. Un día, encontrarían un arnés alado que les permitía volar, que sin saberlo estaba hecho de un material alienígena llamado Nth Metal, creado por la raza guerrera de Thanagar. Junto con eso vino un evento que definiría su legado, ya que Nabu les dijo que se reencarnarían al morir. Hawkgirl, en particular, se haría más conocida que su amante, Hawkman, ya que aparecería de manera más prominente, siendo un elemento básico de la Liga de la Justicia, junto con su sobrina Kendra como parte de la relanzada Sociedad de la Justicia de América.<br><b>Régimen. </b>A Hawkgirl le lavaron el cerebro para unirse al régimen de Una Tierra. Esto la ha convertido en una ejecutora ideal para las filas de Superman.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image10">
+			<img src="heroes\nightwing.png" alt="nightwing"></a>
+			<h2>Nightwing</h2>
+			<div class="description">
+				<p class="frase">¡Déjame mostrarte cómo se hace!</p>
+				<p>Richard John "Dick" Grayson creció como parte de una compañía de circo llamada The Flying Graysons, que siempre asombraron a la audiencia con sus acrobacias de alto vuelo. Sin embargo, un asesinato por parte de la pandilla Zuccos, los envía a su perdición. Como tal, Dick fue al orfanato y pronto fue adoptado por Bruce Wayne. Más tarde, al revelarle su identidad secreta, Dick siguió los pasos de  Batman  al convertirse en su compañero, Robin. Años más tarde, Robin se convertiría en Nightwing.<br><b>Injustice: </b>La versión de Dick de la dimensión alternativa murió hace mucho tiempo al comienzo de la historia del juego, con Damian Wayne tomando su lugar como Nightwing. Flecha Verde del universo "principal" confunde brevemente a Damian con Dick antes de que el Batman alternativo le explique el cambio.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image11">
+			<img src="heroes\shazam.png" alt="shazam"></a>
+			<h2>Shazam</h2>
+			<div class="description">
+				<p class="frase">¡No puedes vencer al mortal más poderoso de la Tierra!</p>
+				<p>Billy Batson, de doce años, fue elegido por encima del resto de los mortales por el mago Shazam para ser su campeón de la justicia, Captain Marvel. Cuando Billy pronuncia el nombre del mago, un rayo mágico lo golpea y se convierte en el mortal más poderoso del mundo. Siendo Captain Marvel, posee la sabiduría de <b>S</b>alomón, la fuerza de <b>H</b>ércules, la resistencia de <b>A</b>tlas, el poder de <b>Z</b>eus, el coraje de <b>A</b>quiles y la velocidad de <b>M</b>ercurio (<b>SHAZAM</b>).<br>
+				<b>Régimen. </b>Al ser joven, Billy Batson era más propenso a ser persuadido e intimidado para que trabajara para Superman. A medida que crece la opresión del régimen, Billy comienza a tener dudas sobre las justificaciones de sus acciones.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image12">
+			<img src="heroes\superman.png" alt="superman"></a>
+			<h2>Superman</h2>
+			<div class="description">
+				<p class="frase">El mundo ha cambiado desde Metrópolis</p>
+				<p>Superman es el deutragonista general de la serie Injustice. Kal-El, nacido en Krypton, fue enviado por padre a la Tierra tras la autodestrucción de su planeta. Fue criado por una pareja de Kansas bajo el nombre de Clark Kent. Al descubrir sus poderes, Clark se mudó a Metrópolis donde se convertiría en Superman y líder fundador de la Liga de la Justicia.<br><b>Régimen. </b>Un dictador muy atribulado, Superman fue drogado para matar a su esposa Lois, su hijo por nacer y todo Metrópolis por el Joker. Ahora gobierna como Alto Consejero de la Tierra, matando a todos los que se le oponen.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image13">
+			<img src="heroes\wwoman.png" alt="wonder-woman"></a>
+			<h2>Wonder Woman</h2>
+			<div class="description">
+				<p class="frase">¿Mencioné que soy una Amazona?</p>
+				<p>Wonder Woman  es la tritagonista general de la serie Injustice. Hija de la reina amazona y del dios griego del trueno Zeus , Diana fue entrenada por las amazonas y el dios griego de la guerra Ares . Armada con armas mágicas y uno de los guerreros más formidables de la Tierra, Diana lucha para proteger a los inocentes.<br><b>Régimen. </b>Guerrera de principio a fin, Wonder Woman no tiene problemas para matar a los villanos, o incluso a otros héroes, que se oponen a ella y a Superman. Ella cree que lo que Superman está haciendo es correcto y justo.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#image14">
+			<img src="heroes\zatanna.png" alt="zatanna"></a>
+			<h2>Zatanna</h2>
+			<div class="description">
+				<p class="frase">¡Prepárate para sorprenderte!</p>
+				<p>Hija de John Zatara, Zatanna es miembro de la tribu mística de hechiceros llamados los Ocultos. Ahora miembro de Justice League Dark, Zatanna protege la Tierra de diversas amenazas ocultas. Zatanna es una de las practicantes de magia más poderosas vistas en Injustice. Al pronunciar sus hechizos como palabras al revés, Zatanna puede lanzar ilusiones, manipular elementos e incluso manipular la realidad a pequeña escala, lo que permite la teletransportación o la creación instantánea de varios elementos temáticos mágicos.</p>
+			</div>
+		</div>
 	</section>
 	<article class="light-box" id="image1">
 		<a href="#image14" class="next"><i class="fas fa-angle-left"></i></a>
@@ -149,36 +287,255 @@
 		<a href="#image1" class="next"><i class="fas fa-angle-right"></i></a>
 		<a href="#" class="close">X</a>
 	</article>
-<!--	<section>
-	<a href="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	<a href="" src="#image">
-		<img src="villanos/" alt=""></a>
-	</section> -->
+	<h1 id="villain">Villanos</h1>
+	<span class="linea2"></span>
+	<section class="galeria">
+		<div class="item">
+			<a href="#vil"><img src="villanos/ares.png" alt="ares"></a>
+			<h2>Ares</h2>
+			<div class="description">
+				<p class="frase">¡He aquí el Dios de la Guerra!</p>
+				<p>Ares es uno de los doce hijos de Zeus y Hera. Se convirtió en el dios de la guerra en el panteón griego y sería la inspiración pura para los soldados en Grecia. También atacó a las Amazonas enviando a Hércules. Ares luego atacaría a  Themyscira  , pero es detenido por una Mujer Maravilla recién bautizada.<br><b>Régimen. </b>El régimen de Superman ha sido eficaz para reprimir la violencia. Cuando el dios debilitado descubre que los héroes de un mundo paralelo están luchando contra One Earth Forces, ayuda a alimentar el conflicto.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil1"><img src="villanos/blackadam.png" alt="blackadam"></a>
+			<h2>Black Adam</h2>
+			<div class="description">
+				<p class="frase">El bien y el mal no son constantes. Los definen los que tienen poder</p>
+				<p>Teth-Adam fue criado como hijo del legendario Ramsés II. Cuando alcanzó la edad adulta, se acercó al mago conocido como Shazam, donde se le otorgaron los poderes de los dioses egipcios. Esto le da la capacidad de aprovecharlos. diciendo la palabra mágica "¡SHAZAM!". Adam vivió dentro de su nueva forma para mantener la inmortalidad, pasando a gobernar su propio país, Kahndaq. También usó sus poderes para el mal, pero solo para defender a su país<br><b>Régimen. </b> Black Adam es un partidario del gobierno de Superman porque se asemeja a su propio gobierno. Adam afirma que Superman usó su regla en Kahndaq como modelo para One Earth.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil2">
+			<img src="villanos/catwoman.png" alt="catwoman/gatubela"></a>
+			<h2>Catwoman</h2>
+			<div class="description">
+				<p class="frase">Tengo nueve vidas. En la mayoría de ellas solo soy una traidora</p>
+				<p>Al crecer en Gotham City, Selina Kyle solo pudo sobrevivir en las calles gracias a su encanto seductor y sus habilidades como ladrona insignificante. Más tarde en la edad adulta, trabajó en el East End como una dominatrix desesperada, hasta que vio a Batman.en sus primeros días luchando contra el crimen. Verlo la inspiró a llevar sus habilidades de ladrón a una escala mayor al crear un disfraz y hacerse llamar Catwoman.<br><b>Régimen. </b>Catwoman se puso del lado de su amado Batman contra el régimen de Superman. Sin embargo, a medida que el poder de la Alta Consejera se intensificó, se unió al régimen en lugar de luchar para proteger a Batman. Su decisión no le cayó bien.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil3">
+			<img src="villanos/deathstroke.png" alt="deathstroke"></a>
+			<h2>Deathstroke</h2>
+			<div class="description">
+				<p class="frase">¿Prefieres el acero o el plomo?</p>
+				<p>Slade Wilson se inscribió en el Ejército de los Estados Unidos, aunque mintió sobre su edad. Durante sus giras, se convirtió en un talentoso en el uso de armas de fuego y combate cuerpo a cuerpo, tanto que se le solicitó un experimento que aumentara aún más sus habilidades. Si bien casi lo mata, Slade terminó relativamente bien. Una vez dado de alta, se estableció con una familia, estos resultaría en un ataque de asesinos que mataron a su esposa y dejaron mudo a su hijo. Manchado por la venganza, comenzó a trabajar como Deathstroke, un mercenario que fue contratado originalmente para lidiar con los Jóvenes Titanes.<br><b>Insurgencia. </b>Tras haber sido perseguido por el régimen de Superman, Deathstroke ha dejado de lado su estilo de vida mercenario y se ha unido a los Insurgentes de Batman. Su único objetivo es devolver el dolor que le causaron los One Earthers.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil4">
+			<img src="villanos/doomsday.png" alt="doomsday"></a>
+			<h2>Doomsday</h2>
+			<div class="description">
+				<p class="frase">Vivo para matarte ...</p>
+				<p>Mucho antes de que los kryptonianos habitaran su planeta epónimo, fue el hogar de un científico que experimentó repetidamente con un ser artificial que estaba destinado a ser el animal más peligroso de la galaxia. La idea era que se enviara a la batalla para que lo mataran, y luego, después de la recreación, se volvería impermeable a la forma en que lo mataron antes. Este extraterrestre, llamado 'Doomsday', saldría del cautiverio y vendría a la Tierra. Al despertar, causó estragos en todo su viaje por América, deshaciéndose de la Liga de la Justicia antes de entrar en contacto con  Superman<br><b>Régimen. </b>Dado que matarlo sería casi imposible, Superman ideó un collar que le permite controlar los movimientos de Doomsday. Doomsday ahora sirve como un arma de último recurso para el régimen de tierra Uno.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil5">
+			<img src="villanos/guason.png" alt="the-joker/el-guason"></a>
+			<h2>El Guasón</h2>
+			<div class="description">
+				<p class="frase">HA-HA HA-HA HA-HA...</p>
+				<p>La historia del Joker es en gran parte un misterio. El origen más comúnmente aceptado se refiere a un hombre de familia y comediante fracasado que solía trabajar en una fábrica de productos químicos. El hombre tenía una esposa embarazada a la que no podía mantener, y fue manipulado para cometer un robo en la fábrica de productos químicos en la que solía trabajar bajo el alías de Red Hood. Su esposa y su hijo por nacer murieron en un accidente, pero ya era demasiado tarde para que el hombre se echara atrás en el robo. El robo salió mal, cuando  Batman  atacó, envió al futuro Joker a una tina de productos químicos, deformando su apariencia en la de un payaso malvado. Esto lo volvió loco, ya que el Joker se convirtió en el mayor enemigo de Batman y de la totalidad de Gotham.<br><b>Insurgencia. </b>El Joker fue la primera víctima del ascenso al poder de Superman. Drogó al Hombre de Acero, convenciéndolo de que su esposa embarazada Lois era la villana Doomsday. Al matarla, Superman activó una bomba nuclear que destruyó Metrópolis. Superman regresó a la prisión donde Batman estaba interrogando al Joker. Superman luego empujó todo su antebrazo a través del torso del Joker riendo y le arrancó el corazón, matándolo.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil6">
+			<img src="villanos/harley.png" alt="harley-quinn"></a>
+			<h2>Harley Quinn</h2>
+			<div class="description">
+				<p class="frase">¿Listo para una payasada?</p>
+				<p>Harleen Quinzel fue una vez una niña inocente que, al graduarse de la Universidad de Gotham, se enamoró de los criminales que habitaban en  Arkham Asylum. Cuando trabajó allí como pasante, fue elegida para ser la terapeuta de  The Joker, donde fue manipulada involuntariamente para que trabajara junto a él. Harleen ayudó a escapar de Arkham, vistiéndose así como un arlequín llamado simplemente Harley Quinn.<br><b>Insurgencia. </b>Después del asesinato del Joker por parte de Superman, Harley inició el Clan Joker, que lo adora como un mártir. Ella y el clan Joker llevaron a cabo actos que distrajeron y molestaron al régimen de One Earth, ganándose la confianza de la Insurgencia.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil7">
+			<img src="villanos/killerfrost.jpg" alt="killer-frost"></a>
+			<h2>Killer Frost</h2>
+			<div class="description">
+				<p class="frase">¡Solo rompiendo el hielo!</p>
+				<p>El primer Killer Frost en enfrentar las llamas nucleares de  Firestorm  fue Crystal Frost, que luego sería usurpada por Louise Lincoln de una manera poco convencional. Ambos eran amigos cercanos, y una vez que el original murió, Lincoln deseaba convertirse en su sucesor. Como tal, replicó el experimento por el que Crystal pasó para convertirse en la nueva Killer Frost. Si bien es conocida principalmente por ser una de los varios villanos de Firestorm, haría otro trabajo en el negocio de los supervillanos, siendo una frecuente en el Escuadrón Suicida.<br><b>Régimen. </b>Killer Frost aparece como miembro del régimen que trabaja bajo Superman. Ella participa en el ataque a Gotham City y al cuartel general de la Insurgencia.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil8">
+			<img src="villanos/lexluthor.png" alt="Lex-luthor"></a>
+			<h2>Lex Luthor</h2>
+			<div class="description">
+				<p class="frase">Nada bueno proviene de la adoración al héroe</p>
+				<p>Alexander Joseph Luthor es el director ejecutivo de su empresa LexCorp, para la que obtuvo los fondos en un intento de obtener una enorme póliza de seguro de vida tras la muerte de sus padres. Como tal, se destacó en el diseño de aviones y transbordadores espaciales. Cuando apareció Superman, Lex se enfureció con él por saber que alguien como Superman se había convertido en una gran carga para  Metropolis.<br><b>Insurgencia. </b>El mejor amigo del Alto Consejero, Lex Luthor es también el principal proveedor de armas del ejército de One Earth. Sin embargo, apoya y financia a los Insurgentes de Batman en secreto para derrocar al régimen de Superman.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil9"><img src="villanos/lobo.png" alt="lobo"></a>
+			<h2>Lobo</h2>
+			<div class="description">
+				<p class="frase">¡No me llaman The Main Man por nada!</p>
+				<p>Lobo es el último de su raza alienígena conocida, los zarnianos. Es un hombre violento y destructivo de principio a fin, incluso con su nombre zarniano, que significa "el que devora tus entrañas y las disfruta plenamente". También cometió un genocidio masivo contra toda su raza utilizando un enjambre de escorpiones voladores. Al no ver nada más que hacer, Lobo pasó sus días como cazarrecompensas, matando a cualquiera siempre que el precio sea correcto.<br><b>Injustice: </b>Lobo aparece en el final de Doomsday , con el monstruo buscándolo como un oponente digno después de terraformar la Tierra en Krypton prehistórico.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil10"><img src="villanos/raven.png" alt="raven"></a>
+			<h2>Raven</h2>
+			<div class="description">
+				<p class="frase">¡Ahora doy rienda suelta al infierno!</p>
+				<p>Rachel Roth es la hija de la bruja Arella y el famoso demonio Trigon. Este último fue específicamente a varias mujeres en un intento de criar a sus propios hijos para una conquista en la Tierra y el reino místico Azarath. Rachel luego se rebeló y huyó a la Tierra, donde sería conocida como la usuaria de la magia Raven, y luego se alistó para la versión moderna de los Jóvenes Titanes. Trigon se convertiría en su mayor némesis, siguiéndola y tentándola a cumplir sus deseos dementes.<br><b>Régimen. </b>Una vez que el gobierno de Superman asumió el control sobre la Tierra, Raven cedió a sus deseos demoníacos. Ahora disfruta imponiendo el duro estilo de justicia y castigo de Superman.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil11"><img src="villanos/scorpion.png" alt="siniestro"></a>
+			<h2>Scorpion</h2>
+			<div class="description">
+				<p class="frase">¡Te unirás a mí en el infierno!</p>
+				<p>Hanzo Hasashi es criado por el clan ninja Shirai-Ryu, los rivales del clan Lin Kuei. Si bien Hanzo sería uno de sus mejores ninjas, su clan sería horriblemente asesinado, dejándolo brutalmente herido. El brujo Quan Chi se le acercó y le ofreció convertirse en su peón a cambio del Lin Kuei que era el responsable,  Sub-Zero . Hanzo aceptó, y ganaría el apodo de Escorpión, siendo uno de los participantes más mortíferos del Netherrealm en los torneos de Mortal Kombat.<br><b>Injustice: </b>Antes de que el ninja de la venganza pueda acabar con su frío rival, es transportado a otro mundo, un lugar muy nuevo que desconoce. En su final, Trigon acusa a Scorpion de dejar su ejército y ambos tuvieron un duelo masivo en el infierno. Scorpion salió vencedor y toma el control del ejército del rey demonio, usándolo para conquistar la tierra.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil12"><img src="villanos/sinestro.png" alt="siniestro"></a>
+			<h2>Sinestro</h2>
+			<div class="description">
+				<p class="frase">Sabrás el significado del miedo ...</p>
+				<p>Thaal Sinestro de Korugar solía ser uno de los Green Lanterns más decorados. Sin embargo, cuando Hal Jordan se convirtió en el más nuevo y más grande Linterna Verde, esto mancharía la imagen de Sinestro, haciéndolo más descuidado en sus misiones e incluso desafiando las órdenes de los Guardianes de satisfacer sus propias necesidades. Por lo tanto, está exiliado del Green Lantern Corps. Pero, cuando se iría al exilio, la encarnación alienígena del miedo Parallax le dio un anillo de poder amarillo para ayudarlo a vengarse del Cuerpo, convirtiéndose así en el mayor adversario de Green Lantern.<br><b>Régimen. </b>Sinestro fue uno de los pocos villanos que voluntariamente se unió al régimen de Superman. A cambio de ayudar a Superman a establecer su dictadura, Superman ha prometido ayudar a Sinestro con objetivos desconocidos.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil13">
+			<img src="villanos/zod.png" alt="general-zod"></a>
+			<h2>Zod</h2>
+			<div class="description">
+				<p class="frase">¡Arrodíllate ante Zod!</p>
+				<p>General de Krypton, Zod fue desterrado a la Zona Fantasma por intentar conquistar Krypton. Un ultranacionalista, Zod hará cualquier cosa para promover la supremacía de Krypton, incluido el genocidio. Zod es un hábil combatiente cuerpo a cuerpo y cuando combina esto con su súper fuerza y ​​velocidad, puede lanzar una serie de poderosos golpes para lograr el máximo daño interno contra su oponente.<br><b>Régimen. </b> En el final de Sub-Zero, el General Zod es liberado accidentalmente de la Zona Fantasma por Sub-Zero en su esfuerzo por regresar a su Reino, junto con Superman, Ursa y Non. Los cuatro kryptonianos atacan a Sub-Zero, Batman y su Liga de la Justicia.</p>
+			</div>
+		</div>
+		<div class="item">
+			<a href="#vil14"><img src="villanos/solomon.png" alt="solomon-grundy"></a>
+			<h2>Solomon Grundy</h2>
+			<div class="description">
+				<p class="frase">¡NO PUEDEN DETENER A GRUNDY!</p>
+				<p>En el pasado, Cyrus Gold era un rico comerciante que tenía una vida relativamente segura en Gotham City. Sin embargo, un grupo de criminales lo mataría y lo arrojaría a  Slaughter Swamp. Muchos años más tarde, su cuerpo estaría imbuido de su vegetación, resucitando así como el monstruo parecido a un zombi Solomon Grundy. Siendo su nombre una referencia a la canción infantil, se convertiría en un enemigo constante del primer Green Lantern,  Batman y miembros de la Justice Society of America. Aunque es poderoso y casi imposible de matar permanentemente, Grundy no es considerado una amenaza importante por muchos debido a su inteligencia limitada.</p>
+			</div>
+		</div>
+	</section>
+	<article class="light-box" id="vil">
+		<a href="#vil14" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/ares.png">
+		<a href="#vil1" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil1">
+		<a href="#vil" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/blackadam.png">
+		<a href="#vil2" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil2">
+		<a href="#vil1" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/catwoman.png">
+		<a href="#vil3" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil3">
+		<a href="#vil2" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/deathstroke.png">
+		<a href="#vil4" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil4">
+		<a href="#vil3" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/doomsday.png">
+		<a href="#vil5" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil5">
+		<a href="#vil4" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/guason.png">
+		<a href="#vil6" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil6">
+		<a href="#vil5" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/harley.png">
+		<a href="#vil7" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil7">
+		<a href="#vil6" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/killerfrost.jpg">
+		<a href="#vil8" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil8">
+		<a href="#vil7" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/lexluthor.png">
+		<a href="#vil9" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil9">
+		<a href="#vil8" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/lobo.png">
+		<a href="#vil10" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil10">
+		<a href="#vil9" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/raven.png">
+		<a href="#vil11" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil11">
+		<a href="#vil10" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/scorpion.png">
+		<a href="#vil12" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil12">
+		<a href="#vil11" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/sinestro.png">
+		<a href="#vil13" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil13">
+		<a href="#vil12" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/zod.png">
+		<a href="#vil14" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
+	<article class="light-box" id="vil14">
+		<a href="#vil13" class="next"><i class="fas fa-angle-left"></i></a>
+		<img src="villanos/solomon.png">
+		<a href="#vil" class="next"><i class="fas fa-angle-right"></i></a>
+		<a href="#villain" class="close">X</a>
+	</article>
 </div>
-
 <footer>
-	Copyright Todos los Derechos Reservados
+	<div>
+		<p>Este es un videojuego desarrollado por: </p>
+		<div class="youtube">
+			<a href="https://www.warnerbros.com/" target="_blank"><img src="wbgames.png" alt="Warner" class="logo"></a>
+			<a href="https://www.dccomics.com/" target="_blank"><img src="dc.png" alt="Dc" class="logo"></a>
+			<a href="https://www.netherrealm.com/" target="_blank"><img src="nreal.png" alt="Unreal" class="logo"></a>
+		</div>
+		<div >
+			<p>
+				Este juego puede adquirirlo en las siguientes plataformas:
+			</p>
+		<div class="youtube">
+			<a href="https://www.playstation.com/es-bo/games/injustice-gods-among-us-ultimate-edition-ps4/" target="_blank"><img src="logops.png" alt="playstation4" class="logo"></a>
+			<a href="https://marketplace.xbox.com/en-US/Product/Injustice-Gods-Among-Us/66acd000-77fe-1000-9115-d80257520829?ref=dtf.ru" target="_blank"><img src="xbox.png" alt="xbox one" class="logo"></a>
+			<a href="https://store.steampowered.com/app/242700/Injustice_Gods_Among_Us_Ultimate_Edition/" target="_blank"><img src="pc.jpg" alt="PC" class="logo"></a></div>
+		</div>
+	</div>
+	
+	<div class="youtube"><p>Copyright 2020 </p><p class="imp">&nbsp;&nbsp;By: @DC_fangirl</p><a href="https://www.facebook.com/" target="_blank"><img src="iface.png" alt="Facebook" class="minilog"></a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="iinsta.png" alt="Instagram" class="minilog"></a>
+		<a href="https://twitter.com/?lang=es" target="_blank"><img src="itwt.png" alt="Twiter" class="minilog"></a>
+		</div>
+	<div class="youtube"><p> Todos los Derechos Reservados - Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.
+		
+	</div></p>
 </footer>
 </body>
 </html>

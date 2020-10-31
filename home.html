@@ -8,19 +8,39 @@
 	<link href='https://fonts.googleapis.com/css?family=Sacramento' rel='stylesheet'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9d9b48e892.js" crossorigin="anonymous"></script>
 </head>
+<div class="overlay" id="modal">
+	<div class="pop">
+		<div class="foto"></div>
+		<div class="forum">
+			<h1>¡Inicia Sesión!</h1>
+			<form>
+  				<label>Usuario:</label><br>
+  				<input type="text" name="user" placeholder="Usuario" max="30"><br>
+  				<label>Correo electrónico:</label><br>
+  				<input type="email" name="user" placeholder="E-mail" maxlength="30"><br>
+  				<label>Contraseña:</label><br>
+  				<input type="password" name="contra" placeholder="********" minlength="8"><br>
+  				<input type="submit" value="Enviar" id="boton">
+			</form>
+		</div>
+		<a href="#" class="off">X</a>
+	</div>
+</div>
 <body>
 	<header>
 	<div class="firstt">
-		<li class="blak"><a href="#">INICIAR SESIÓN</a></li>
+		<li class="blak"><a href="#modal">INICIAR SESIÓN</a></li>
 		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="blank">DESCARGAR</a></li>
 	</div>
 	</header>
 <nav class="navy">
-	<figure class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
+	<figure class="logeo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
 	<ul class="menu">
 		<li><a href="home.html">INICIO</a></li>
 		<li><a href="personajes.html">PERSONAJES</a></li>
+		<li><a href="stage.html">ESCENARIOS</a></li>
 		<li><a href="puzzle.html">PUZZLE</a></li>
 		<li><a href="comentarios.html">COMENTARIOS</a></li>
 		<li><a href="#">MÁS INFORMACIÓN</a>
@@ -31,13 +51,34 @@
 		</li>
 	</ul>
 </nav>
+<div class="mural">
+	<span class="spanbtn"><button class="btn" id="button"><a href="javascript:clickmenu()" class="color"><i class="fa fa-2x fas fa-bars"></i></a></button></span>
+		<div id="menu1"> 
+			<ul class="ulm">
+				<li><a href="home.html"><i class="fas fa-caret-right"></i> INICIO</a></li>
+				<li><a href="personajes.html"><i class="fas fa-caret-right"></i> PERSONAJES</a></li>
+				<li><a href="stage.html"><i class="fas fa-caret-right"></i> ESCENARIOS</a></li>
+				<li><a href="puzzle.html"><i class="fas fa-caret-right"></i> PUZZLE</a></li>
+				<li><a href="comentarios.html"><i class="fas fa-caret-right"></i> COMENTARIOS</a></li>
+				<li><a href="reseña.html"><i class="fas fa-caret-right"></i> RESEÑAS</a></li>
+				<li><a href="videos.html"><i class="fas fa-caret-right"></i> VIDEOS</a></li>
+				</li>
+			</ul>
+		</div>
+</div>
+	<script>
+		function clickmenu() {
+			document.getElementById("menu1").classList.toggle('active');
+		}
+	</script>
 <section>
 	<div>
 		<div class="video2">
-		<video src="videof.mp4" autoplay loop muted poster="injop.jpg"></video>
+		<video src="videof.mp4" autoplay loop muted poster="injop.jpg" width="100%"></video>
 		</div>
-	</div>
+	</div><div class="fondo">
 	<article class="container">
+
 		<p>
 			<span class="imp">Injustice: Gods Among Us</span> <span class="italy">(en español: Injustice: Dioses entre nosotros)</span> es un videojuego de lucha desarrollado por NetherRealm Studios y publicado por Warner Bros. Interactive. El juego está protagonizado por los héroes y villanos del Universo DC; su historia está ubicada en un universo alternativo, donde Superman se vuelve un dictador y forma un nuevo orden mundial llamado el Régimen. Injustice fue anunciado oficialmente el 31 de mayo de 2012 y lanzado el 16 de abril de 2013 para PlayStation 3, Wii U y Xbox 360.​ El principal desarrollador del juego Ed Boon dijo que la idea principal era crear una nueva serie de peleas fuera de Mortal Kombat, así como crear un nuevo modo de juego.
 		</p>
@@ -56,7 +97,7 @@
 		<p>
 			El 1 de diciembre de 2016 se confirmó la llegada a Xbox One a través de la retrocompatibilidad con Xbox 360.
 		</p>
-	</article>
+	</article></div>
 	<aside>
 		<table>
 			<tr>
@@ -117,6 +158,7 @@
 			</tr>
 		</table>
 	</aside>
+<div class="fondo">
 	<article class="container">
 		<h2>Sinopsis</h2>
 		<div id="cita">
@@ -160,81 +202,105 @@
 			Un fatídico día, en otra dimensión, el Joker drogó a Superman con Gas del Miedo del Espantapajaros y Kriptonita en polvo para que imaginara a su esposa Lois Lane y a su hijo no nato como Doomsday, causando la muerte de estos, cuando reaccionó, Superman se dió cuenta de lo que había hecho, pero ya era demasiado tarde, una bomba atómica destruyó Metrópolis siendo Lex Luthor (y Superman, claro) sus únicos supervivientes, Batman interrogó al Joker para obtener más información, pero Superman apareció, y asesina al Joker con su visión calorífica seguido de un golpe seco en el Estómago.
 		</p>
 		<h3>Capítulo 01: Batman</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/132jJZP17x8" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Mientras tanto, en la dimensión normal, Superman, Hawkgirl, Aquaman, Shazam, Flash, Green Arrow y Wonder Woman y Linterna Verde se encontraban luchando contra Ares, Black Adam, Sinestro y Doomsday en Metrópolis, mientras tanto, Batman enfrenta a Deathstroke en el Asilo Arkham y lo derrota, Batman recibe información de Superman acerca de que vaya a la Atalaya para detener a Lex Luthor mientras ellos luchaban contra Doomsday (Black Adam y Ares y Sinestro habían sido derrotados). Batman va a la Atalaya donde se encuentra con Raven, Cyborg Nightwing luchando contra Catwoman, Bane, Lex Luthor y Solomon Grundy. Al derrotar a 2 de ellos, Batman se enfrenta a Bane y a Lex Luthor, cuando fue derrotado y noqueado por Nightwing, Lex dice a Batman que le entregó una bomba atómica al Joker para destruir Metrópolis, por lo que Batman decide regresar a Metrópolis, le informa a la Liga lo sucedido y ellos se lanzan sobre Joker y Harley Quinn, pero un brillo aparece sobre Batman, Green Arrow, Green Lantern, Aquaman y Wonder Woman y al atacar al Joker, todos reaparecen en una Metrópolis oscura y dominada por una organización llamada Régimen, Batman se enfrenta al Joker y lo derrota, Green Lantern, Green Arrow y Wonder Woman empiezan a explorar esa dimensión y Aquaman va a Atlantis para ver si los archivos de Atlantis siguen igual en dicho mundo tan oscuro mientras Batman se lleva al Joker.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Batman vs. Deathstroke</li>
-			<li>Batman vs. Bane</li>
-			<li>Batman vs. Lex Luthor</li>
-			<li>Batman vs. The Joker (Final)</li>
+			<li><i class="fas fa-running"></i> Batman vs. Deathstroke</li>
+			<li><i class="fas fa-running"></i> Batman vs. Bane</li>
+			<li><i class="fas fa-running"></i> Batman vs. Lex Luthor</li>
+			<li><i class="fas fa-running"></i> Batman vs. The Joker (Final)</li>
 		</ul>
 		<h3>Capítulo 02: Green Lantern</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/ceOhVXNDKDY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Green Lantern, Green Arrow y Wonder Woman van a un edificio abandonado en Ciudad Gótica, llena de grafitis del Joker, mientras Wonder Woman y Green Arrow esperan afuera, Green Lantern entra al edificio y entra a un cuarto donde están Raven poseída por Trigon y a Cyborg torturando a un herido Deathstroke sin máscara, pero no se veían iguales, eran diferentes a los normales, después de derrotarlos estos huyen a informarle el suceso a alguien llamado el Alto Consejero. Green Lantern, después de esto, escapa del edificio por una ventana y ve a Wonder Woman y a Green Arrow siendo atacados por un Hal Jordan convertido en un Yellow Lantern y Sinestro (Régimen), después un conflicto entra en ellos 2 pero Green Lantern termina venciendo, y después decide seguir explorando esa extraña dimensión junto a Wonder Woman y Green Arrow.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Green Lantern vs. Raven (Régimen)</li>
-			<li>Green Lanternvs. Cyborg (Régimen)</li>
-			<li>Green Lantern vs. Sinestro (Régimen)</li>
-			<li>Green Lantern vs. Yellow Lantern (Final)</li>
+			<li><i class="fas fa-running"></i> Green Lantern vs. Raven (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Lanternvs. Cyborg (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Lantern vs. Sinestro (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Lantern vs. Yellow Lantern (Final)</li>
 		</ul>
-		<h3>Capítulo 04: Aquaman</h3>
+		<h3>Capítulo 03: Aquaman</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/TvppeVeY8Dk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Aquaman va a Atlantis para ver si sus archivos siguen intactos en ese mundo caótico. Entonces Aquaman se entera por un historiador de Atlantis lo que Joker le hizo a Superman, la muerte del Joker y que Superman ha iniciado un Régimen anti-criminal que gobierna el Universo DC. Después aparecen Flash y Shazam, pero diferentes, Flash (Régimen) le dice a Aquaman que el entregó Atlantis al Régimen, pero Aquaman le grita que Superman (Régimen) no tendrá Atlantis. Shazam (Régimen) lo amenaza diciéndole que lo prometió, pero Aquaman lo vence, entonces Aquaman (Régimen) aparece y manda a sus ejércitos atacar a Aquaman, pero los derrota, después Aquaman (Régimen) escapa y aparece Ares (Régimen), quien, al ser vencido por Aquaman, le da información más abierta del tema y que siempre ha estado planeando una conspiración contra el Alto Consejero (Superman), por lo que Aquaman va con los demás a contarles.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Aquaman vs. Flash (Régimen)</li>
-			<li>Aquaman vs. Shazam (Régimen)</li>
-			<li>Aquaman vs. Aquaman (Régimen)</li>
-			<li>Aquaman vs. Ares (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Aquaman vs. Flash (Régimen)</li>
+			<li><i class="fas fa-running"></i> Aquaman vs. Shazam (Régimen)</li>
+			<li><i class="fas fa-running"></i> Aquaman vs. Aquaman (Régimen)</li>
+			<li><i class="fas fa-running"></i> Aquaman vs. Ares (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 04: El Guason</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/kSS7vFyx2iE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Mientras tanto, con Batman y el Joker, estos 2 se enfrentan en Gotham City, Joker vence al murciélago e intenta "grabarle una sonrisa" pero Yellow Lantern y Hawkgirl (Régimen) aparecen, lo confunden con el Batman de su dimensión y se lo llevan, pero de repente, cuando el Joker decide informar esto, Harley Quinn (Insurgencia) aparece y piensa que el Joker es un impostor (pues el Joker de su dimensión había muerto), pero el Joker la derrota y la hace entrar en razón, pero Batman (Insurgencia) aparece y entrega a Joker y a Harley (Insurgencia) con el resto de los héroes (incluido Aquaman), Batman (Insurgencia) explica a todos los héroes, por lo que se embarcan en una aventura para rescatar a Batman, pero como Joker no es muy confiable, los encierran en el Asilo Arkham, que es asaltado por Nightwing (Régimen) y Hawkgirl (Régimen), pero Joker los derrota y estos 2 escapan.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Joker vs. Batman</li>
-			<li>Joker vs. Harley Quinn (Insurgencia)</li>
-			<li>Joker vs. Hawkgirl (Régimen)</li>
-			<li>Joker vs. Nightwing (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Joker vs. Batman</li>
+			<li><i class="fas fa-running"></i> Joker vs. Harley Quinn (Insurgencia)</li>
+			<li><i class="fas fa-running"></i> Joker vs. Hawkgirl (Régimen)</li>
+			<li><i class="fas fa-running"></i> Joker vs. Nightwing (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 05: Green Arrow</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/R1rGWaPZ5Y0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>Mientras el grupo va a la Mansión Wayne para investigar, Batman (Insurgencia) recibe información de que Batman normal está encerrado en la Isla de Stryker, mientras Superman (Régimen) descubre que Batman no es de su dimensión, por lo que manda a Wonder Woman (Régimen), Black Adam (Régimen), Solomon Grundy (Régimen) y Killer Frost (Régimen) a la Mansión Wayne. Al entrar en la Mansión, Killer Frost (Régimen) y Solomon Grundy (Régimen) asaltan la Mansión y Frost congela a Wonder Woman, pero Green Arrow la descongela con una flecha en llamas. Al derrotar a Grundy (Régimen) y a Killer Frost (Régimen) Arrow va a la Baticueva donde ve una foto de Black Canary, pero es atacado por Wonder Woman (Régimen) y Black Adam (Régimen), después de derrotarlos, estos huyen y el grupo va a investigar que fue de Deathstroke (Insurgencia), mientras, Superman (Régimen) le cuenta a Wonder Woman, Black Adam, Shazam, Flash y Cyborg (todos del Régimen) acerca de la dimensión de los "duplicados" y Superman (Régimen) pregunta a Lex Luthor si hay otra Lois, pero Lex lo engaña diciéndole "No hay otra Lois".</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Green Arrow vs. Solomon Grundy (Régimen)</li>
-			<li>Green Arrow vs. Killer Frost (Régimen)</li>
-			<li>Green Arrow vs. Wonder Woman (Régimen)</li>
-			<li>Green Arrow vs. Black Adam (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Green Arrow vs. Solomon Grundy (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Arrow vs. Killer Frost (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Arrow vs. Wonder Woman (Régimen)</li>
+			<li><i class="fas fa-running"></i> Green Arrow vs. Black Adam (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 06: Cyborg</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/jAZuXIoDyOc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Mientras tanto, en la Atalaya del Régimen, Superman (Régimen) está con Flash (Régimen) y Cyborg (Régimen) quien les muestra un invento de nombre: "El Teletransportador" que trae a sus dobles de la otra dimensión, por lo que Superman (Régimen) y Flash (Régimen) lo utilizan contra Cyborg (Régimen), lo que trae al Cyborg de la dimensión buena a la dimension del Régimen a la Insurgencia, donde encuentra a Deathstroke (Insurgencia) y Lex Luthor (Insurgencia), pero malinterpreta sus intenciones y los derrota, Lex le cuenta todo a Cyborg, por lo que junto a estos 2, van donde están los demás héroes por lo que organizan un plan y envían a Cyborg junto a Deathstroke (Insurgencia) al Salón de la Justicia para encontrar el teletransportador y llegar a la Isla de Stryker, al llegar Cyborg ve su historial y ve que intentó matar a los Titanes (Deathstroke), y son atacados por Catwoman (Régimen), al derrotarla, aparece Cyborg (Régimen), al derrotarlo, ambos se empiezan a hackear sus sistemas, hasta que Cyborg (Régimen) y Catwoman (Régimen) escapan, y Deathstroke y Cyborg usan el teletransportador.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Cyborg vs. Deathstroke (Insurgencia)</li>
-			<li>Cyborg vs. Lex Luthor (Insurgencia)</li>
-			<li>Cyborg vs. Catwoman (Régimen)</li>
-			<li>Cyborg vs. Cyborg (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Cyborg vs. Deathstroke (Insurgencia)</li>
+			<li><i class="fas fa-running"></i> Cyborg vs. Lex Luthor (Insurgencia)</li>
+			<li><i class="fas fa-running"></i> Cyborg vs. Catwoman (Régimen)</li>
+			<li><i class="fas fa-running"></i> Cyborg vs. Cyborg (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 07: Deathstroke</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/9SzXwMcxX9E" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Deathstroke (Insurgencia) y Cyborg son transportados por accidente a la Atalaya, donde hay otro teletransportador, mientras Cyborg vigila, Deathstroke (Insurgencia) hace de las suyas con el teletransportador de la Atalaya, pero es atacado por Flash (Régimen) y Shazam (Régimen), después va a Gotham donde se encuentra con Lex Luthor, Deathstroke (Insurgencia) amenaza a Luthor con su pistola apuntandole en su cabeza calva, Lex dice qur finalmente quiere unirse a la Insurgencia, aún así sin decirle a Superman (Régimen) y al resto del Régimen. Al volver, le dice a Cyborg que su prioridad es matar a Superman (Régimen) y no su Batman, por lo que pide a Cyborg las coordenadas y ambos llegan a la Aeronave Ferris donde son atacados por Wonder Woman (Régimen) y Killer Frost (Régimen), al derrotar a Killer Frost (Régimen) amenaza a Wonder Woman (Régimen) con su lazo de la verdad, y evita que obtenga información de la base de la Insurgencia. Después la derrota y Cyborg y Deathstroke vuelven a la base, no sin antes darle las coordenadas al grupo de héroes a la Isla de Stryker no sin antes hacer explotar la Atalaya.
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Deathstroke (Insurgencia) vs. Flash (Régimen)</li>
-			<li>Deathstroke (Insurgencia) vs. Shazam (Régimen)</li>
-			<li>Deathstroke (Insurgencia) vs. Killer Frost (Régimen)</li>
-			<li>Deathstroke (Insurgencia) vs. Wonder Woman (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Deathstroke (Insurgencia) vs. Flash (Régimen)</li>
+			<li><i class="fas fa-running"></i> Deathstroke (Insurgencia) vs. Shazam (Régimen)</li>
+			<li><i class="fas fa-running"></i> Deathstroke (Insurgencia) vs. Killer Frost (Régimen)</li>
+			<li><i class="fas fa-running"></i> Deathstroke (Insurgencia) vs. Wonder Woman (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 08: Batman (Tierra Uno)</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/olOqh1QHvTE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Batman y Green Arrow llegan a la isla Stryker y dan la orden para que comience el asalto de la Insurgencia. Afuera, Superman tiene reunido a todas sus tropas, inclusive a los meta humano que lo apoyan, esperando que los rebeldes aparezcan. En ese momento Aquaman emerge del agua acompañado de un centenar de criaturas marinas dispuesto a emprender un ataque contra las fuerzas del hombre de acero. Batman y Flecha comienzan a acercarse hacia la posición del otro Batman, pero de repente son emboscados por Catwoman y Nightwing.
 		</p>
@@ -252,12 +318,15 @@
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Batman vs. Catwoman (Régimen)</li>
-			<li>Batman vs. Nightwing (Régimen)</li>
-			<li>Batman vs. Green Arrow (Insurgencia)</li>
-			<li>Batman vs. Yellow Lantern (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Batman vs. Catwoman (Régimen)</li>
+			<li><i class="fas fa-running"></i> Batman vs. Nightwing (Régimen)</li>
+			<li><i class="fas fa-running"></i> Batman vs. Green Arrow (Insurgencia)</li>
+			<li><i class="fas fa-running"></i> Batman vs. Yellow Lantern (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 09: Lex Luthor</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/gQOAvjVKIWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Tres hora antes de la explosión de la Atalaya. Lex termina las modificaciones a su traje y le ensambla el arma con Kryptonita para derrotar a Superman. Él toma una píldora amplificadora de durabilidad y parte para enfrentar al dictador. En medio del vuelo, cerca de la isla Stryker Lex es atacado por dos misiles de seguimiento los cuales trata de esquivar, pero estos explotan cerca y averían su sistema de vuelo por lo que cae en picada hacia las calles de la ciudad. Justo en ese momento llegan el Guasón y Harley, quien observan gustosos el nuevo traje de Lex. Él les pide que se aparten ya que tiene que ir a derrotar a Superman, pero ella no le cree. Entonces el Guasón le ordena a Harley que lo ayude a quitarse el traje y ella gustosa obedece.
 		</p>
@@ -281,12 +350,15 @@
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Lex Luthor vs. Harley Quinn (Insurgencia)</li>
-			<li>Lex Luthor vs. The Joker</li>
-			<li>Lex Luthor vs. Hawkwirl (Régimen)</li>
-			<li>Lex Luthor vs. Shazam (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Lex Luthor vs. Harley Quinn (Insurgencia)</li>
+			<li><i class="fas fa-running"></i> Lex Luthor vs. The Joker</li>
+			<li><i class="fas fa-running"></i> Lex Luthor vs. Hawkwirl (Régimen)</li>
+			<li><i class="fas fa-running"></i> Lex Luthor vs. Shazam (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 10: Flash</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/sEqNOMl9GGM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Flash no puede creer que Superman haya matado ha Shazam. Y comienza a cuestionarse su rol dentro del régimen, pero el Sinestro Corps. Hal Jordan le dice que hicieron lo correcto al eliminar el delito y considera que lo ocurrido con Billy fue una baja aceptable. Ante esas palabras y ya no creyendo en la misión de Superman, Flash decide abandonar la misión, pero Hal no lo deja irse, no sin antes enfrentarse a un duelo contra él.
 		</p>
@@ -299,12 +371,15 @@
 
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Flash (Régimen) vs. Yellow Lantern (Régimen)</li>
-			<li>Flash (Régimen) vs. Solomon Grundy (Régimen)</li>
-			<li>Flash (Régimen) vs. Siniestro (Régimen)</li>
-			<li>Flash (Régimen) vs. Green Arrow (Insurgencia) (Final)</li>
+			<li><i class="fas fa-running"></i> Flash (Régimen) vs. Yellow Lantern (Régimen)</li>
+			<li><i class="fas fa-running"></i> Flash (Régimen) vs. Solomon Grundy (Régimen)</li>
+			<li><i class="fas fa-running"></i> Flash (Régimen) vs. Siniestro (Régimen)</li>
+			<li><i class="fas fa-running"></i> Flash (Régimen) vs. Green Arrow (Insurgencia) (Final)</li>
 		</ul>
 		<h3>Capítulo 11: Wonder Woman / Batman</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/XpLtKAFYy4k" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>
 			Flash les advierte que Superman planea destruir Gotham al igual que Metrópolis y que luego planea ir al mundo de ellos y hacer lo mismo. Pero el Batman de esa dimensión ya ha perdido las esperanzas al encontrarse destruida el arma de Kryptonita. Les agradece a los héroes por su ayuda y se compromete a enviarlos a su dimensión inmediatamente pero ellos se niegan ya que nada les asegura que Superman no aparezca en su dimensión y desate el caos.
 		</p>
@@ -328,12 +403,15 @@
 		</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Wonder Woman (Insurgencia) vs. Bane (Régimen)</li>
-			<li>Wonder Woman (Insurgencia) vs. Ares</li>
-			<li>Wonder Woman (Insurgencia) vs. Raven (Régimen)</li>
-			<li>Wonder Woman (Insurgencia) vs. Wonder Woman (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Wonder Woman (Insurgencia) vs. Bane (Régimen)</li>
+			<li><i class="fas fa-running"></i> Wonder Woman (Insurgencia) vs. Ares</li>
+			<li><i class="fas fa-running"></i> Wonder Woman (Insurgencia) vs. Raven (Régimen)</li>
+			<li><i class="fas fa-running"></i> Wonder Woman (Insurgencia) vs. Wonder Woman (Régimen) (Final)</li>
 		</ul>
 		<h3>Capítulo 12: Superman</h3>
+		<div class="youtube">
+			<iframe width="644" height="362" src="https://www.youtube.com/embed/D581pBdW88k?list=PLJCznWvkR1xlswmBvppthvUZr_mUNSlV9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</div>
 		<p>Batman le explica a Clark la situación y le pide que se encargue del otro Superman mientras ellos lidian contra sus seguidores, pero el Hombre de Acero le propone realizar esa tarea en conjunto, para hacerlo mas rápido y así evitar mas muertes. Antes de partir, el Batman de esa dimensión, el cual se mantenía alejado, le dice a Clark que se alegra de que este de vuelta. En Ciudad Gótica continua la batalla entre meta humanos con los Insurgentes siendo cada vez mas presionados, pero eso cambia con la llegada del Superman de la otra dimensión quien pide que cesen los conflictos pero Black Adam se niega a hacerle caso y comienza a atacarlo.</p>
 		<p>Inevitablemente el villano cae, pero Sinestro ataca al instante sin mucho éxito, ya que Superman lo toma del brazo y le quita su anillo de poder. Sin siquiera inmutarse le pide al Hal Jordan que haga lo mismo. El Linterna amarilla sigue su consejo y le entrega su propio anillo. Pero en Metrópolis el Aquaman de esa dimensión también inicia su plan de conquista a la superficie y juntos con sus hombres inunda gran parte de la ciudad con una ola gigante, pero Superman detiene el avance de la mas a de agua con su aliento gélido. Aquaman lo reta a enfrentar el poder de Atlantis, pero Superman no viene solo y de repente a aparecen la amazonas lideradas por Wonder Woman y se desencadena una nueva batalla. Por su parte Aquaman comienza a pelear contra Superman pero es derrotado en poco tiempo.</p>
 		<p>Al ver caer a su rey, las tropas de Atlantis comienzan a dispersarse. Superman se toma un momento para discutir la situacion actual con Diana, pero en ese momento es atacado por un automovil arrojado por Doomsday. Ambos comienzan a pelear, pero la superioridad de Doomsday comienza a hacerse notar por lo que Superman debe agarrarlo y llevar la pelea a otro punto del mundo en donde ninguna vida sea puesto en peligro. Ambos aterrizan en la fortaleza de la soledad y continuan la pelea hasta que Doomsday cae.</p>
@@ -345,10 +423,10 @@
 		<p>Ambos se alejan después de haber estado observando la mega celda que fue construida para contener el Superman malvado la cual emite radiación solar roja. Él alza la mirada cargada de rabia, asegurando que ese no sera su final.</p>
 		<h4>Enfrentamientos</h4>
 		<ul>
-			<li>Superman vs. Black Adam (Régimen)</li>
-			<li>Superman vs. Aquaman (Régimen)</li>
-			<li>Superman vs. Doomsday (Régimen)</li>
-			<li>Superman vs. Superman (Régimen) (Final)</li>
+			<li><i class="fas fa-running"></i> Superman vs. Black Adam (Régimen)</li>
+			<li><i class="fas fa-running"></i> Superman vs. Aquaman (Régimen)</li>
+			<li><i class="fas fa-running"></i> Superman vs. Doomsday (Régimen)</li>
+			<li><i class="fas fa-running"></i> Superman vs. Superman (Régimen) (Final)</li>
 		</ul>
 		<h2 id="online">Online</h2>
 		<p>Es el modo Online del juego que permite jugar en línea. En Wii U se necesita tener Nintendo Network, en PS3 PlayStation Network y en Xbox 360 Xbox Live.</p>
@@ -366,10 +444,35 @@
 		<p>En la versión mobil del juego, Cyborg tiene una tarjeta de ayuda que son los Laboratorios S.T.A.R, puede que esto se deba a que Cyborg fue creado ahí.</p>
 	</article>
 </section>
-<div class="container"><p>Tomado de: &nbsp;&nbsp;<a href="https://injustice.fandom.com/es/wiki/Wiki_Injustice:_Gods_Among_Us">https://injustice.fandom.com/es/wiki/Wiki_Injustice:_Gods_Among_Us</a></p>
-<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="https://es.wikipedia.org/wiki/Injustice:_Dioses_entre_nosotros">https://es.wikipedia.org/wiki/Injustice:_Dioses_entre_nosotros</a></p></div>
+<div class="fondo">
+<div class="container"><p>Tomado de: &nbsp;&nbsp;<a href="https://injustice.fandom.com/es/wiki/Wiki_Injustice:_Gods_Among_Us" target="_blank">https://injustice.fandom.com</a></p>
+<p><a href="https://es.wikipedia.org/wiki/Injustice:_Dioses_entre_nosotros" target="_blank">https://es.wikipedia.org</a></p></div></div></div>
 <footer>
-	Copyright Todos los Derechos Reservados
+	<div>
+		<p>Este es un videojuego desarrollado por: </p>
+		<div class="youtube">
+			<a href="https://www.warnerbros.com/" target="_blank"><img src="wbgames.png" alt="Warner" class="logo"></a>
+			<a href="https://www.dccomics.com/" target="_blank"><img src="dc.png" alt="Dc" class="logo"></a>
+			<a href="https://www.netherrealm.com/" target="_blank"><img src="nreal.png" alt="Unreal" class="logo"></a>
+		</div>
+		<div >
+			<p>
+				Este juego puede adquirirlo en las siguientes plataformas:
+			</p>
+		<div class="youtube">
+			<a href="https://www.playstation.com/es-bo/games/injustice-gods-among-us-ultimate-edition-ps4/" target="_blank"><img src="logops.png" alt="playstation4" class="logo"></a>
+			<a href="https://marketplace.xbox.com/en-US/Product/Injustice-Gods-Among-Us/66acd000-77fe-1000-9115-d80257520829?ref=dtf.ru" target="_blank"><img src="xbox.png" alt="xbox one" class="logo"></a>
+			<a href="https://store.steampowered.com/app/242700/Injustice_Gods_Among_Us_Ultimate_Edition/" target="_blank"><img src="pc.jpg" alt="PC" class="logo"></a></div>
+		</div>
+	</div>
+	
+	<div class="youtube"><p>Copyright 2020 </p><p class="imp">&nbsp;&nbsp;By: @DC_fangirl</p><a href="https://www.facebook.com/" target="_blank"><img src="iface.png" alt="Facebook" class="minilog"></a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="iinsta.png" alt="Instagram" class="minilog"></a>
+		<a href="https://twitter.com/?lang=es" target="_blank"><img src="itwt.png" alt="Twiter" class="minilog"></a>
+		</div>
+	<div class="youtube"><p> Todos los Derechos Reservados - Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.
+		
+	</div></p>
 </footer>
 </body>
 </html>

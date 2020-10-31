@@ -7,21 +7,41 @@
 	<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9d9b48e892.js" crossorigin="anonymous"></script>
 </head>
+<div class="overlay" id="modal">
+	<div class="pop">
+		<div class="foto"></div>
+		<div class="forum">
+			<h1>¡Inicia Sesión!</h1>
+			<form>
+  				<label>Usuario:</label><br>
+  				<input type="text" name="user" placeholder="Usuario" max="30"><br>
+  				<label>Correo electrónico:</label><br>
+  				<input type="email" name="user" placeholder="E-mail" maxlength="30"><br>
+  				<label>Contraseña:</label><br>
+  				<input type="password" name="contra" placeholder="********" minlength="8"><br>
+  				<input type="submit" value="Enviar" id="boton">
+			</form>
+		</div>
+		<a href="#" class="off">X</a>
+	</div>
+</div>
 <body>
 <div>
 	<video src="videof.mp4" autoplay loop muted poster="injop.jpg" class="video"></video>
 	</div>
 <header>
 	<div class="firstt">
-		<li class="blak"><a href="#">INICIAR SESIÓN</a></li>
-		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="blank">DESCARGAR</a></li>
+		<li class="blak"><a href="#modal">INICIAR SESIÓN</a></li>
+		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="_blank">DESCARGAR</a></li>
 	</div>
 	<nav class="navy">
-	<figure class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
+	<figure class="logeo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
 	<ul class="menu">
 		<li><a href="home.html">INICIO</a></li>
 		<li><a href="personajes.html">PERSONAJES</a></li>
+		<li><a href="stage.html">ESCENARIOS</a></li>
 		<li><a href="puzzle.html">PUZZLE</a></li>
 		<li><a href="comentarios.html">COMENTARIOS</a></li>
 		<li><a href="#">MÁS INFORMACIÓN</a>
@@ -32,10 +52,30 @@
 		</li>
 	</ul>
 </nav>
+<div class="mural">
+		<span class="spanbtn"><button class="btn" id="button"><a href="javascript:clickmenu()" class="color"><i class="fa fa-2x fas fa-bars"></i></a></button></span>
+		<div id="menu1"> 
+			<ul class="ulm">
+				<li><a href="home.html"><i class="fas fa-caret-right"></i> INICIO</a></li>
+				<li><a href="personajes.html"><i class="fas fa-caret-right"></i> PERSONAJES</a></li>
+				<li><a href="stage.html"><i class="fas fa-caret-right"></i> ESCENARIOS</a></li>
+				<li><a href="puzzle.html"><i class="fas fa-caret-right"></i> PUZZLE</a></li>
+				<li><a href="comentarios.html"><i class="fas fa-caret-right"></i> COMENTARIOS</a></li>
+				<li><a href="reseña.html"><i class="fas fa-caret-right"></i> RESEÑAS</a></li>
+				<li><a href="videos.html"><i class="fas fa-caret-right"></i> VIDEOS</a></li>
+				</li>
+			</ul>
+		</div>
+	</div>
+	<script>
+		function clickmenu() {
+			document.getElementById("menu1").classList.toggle('active');
+		}
+	</script>
 </header>
 <section>
 	<div class="tit">
-	<a href="home.html"><img src="title.png" alt="injustice-gods-among-us"></a><
+	<a href="home.html"><img src="title.png" alt="injustice-gods-among-us"></a>
 	</div>
 </section>
 </body>

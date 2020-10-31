@@ -7,19 +7,39 @@
 	<link href='https://fonts.googleapis.com/css?family=Anaheim' rel='stylesheet'>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script src="https://kit.fontawesome.com/9d9b48e892.js" crossorigin="anonymous"></script>
 </head>
+<div class="overlay" id="modal">
+	<div class="pop">
+		<div class="foto"></div>
+		<div class="forum">
+			<h1>¡Inicia Sesión!</h1>
+			<form>
+  				<label>Usuario:</label><br>
+  				<input type="text" name="user" placeholder="Usuario" max="30"><br>
+  				<label>Correo electrónico:</label><br>
+  				<input type="email" name="user" placeholder="E-mail" maxlength="30"><br>
+  				<label>Contraseña:</label><br>
+  				<input type="password" name="contra" placeholder="********" minlength="8"><br>
+  				<input type="submit" value="Enviar" id="boton">
+			</form>
+		</div>
+		<a href="#" class="off">X</a>
+	</div>
+</div>
 <body>
 	<header>
 	<div class="firstt">
-		<li class="blak"><a href="#">INICIAR SESIÓN</a></li>
-		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="blank">DESCARGAR</a></li>
+		<li class="blak"><a href="#modal">INICIAR SESIÓN</a></li>
+		<li class="firstt2"><a href="https://injustice-gods-among-us.uptodown.com/android" target="_blank">DESCARGAR</a></li>
 	</div>
 	</header>
 <nav class="navy">
-	<figure class="logo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
+	<figure class="logeo"><a href="index.html"><img src="logo.png" alt="Logo"></a></figure>
 	<ul class="menu">
 		<li><a href="home.html">INICIO</a></li>
 		<li><a href="personajes.html">PERSONAJES</a></li>
+		<li><a href="stage.html">ESCENARIOS</a></li>
 		<li><a href="puzzle.html">PUZZLE</a></li>
 		<li><a href="comentarios.html">COMENTARIOS</a></li>
 		<li><a href="#">MÁS INFORMACIÓN</a>
@@ -30,16 +50,67 @@
 		</li>
 	</ul>
 </nav>
-	<div class="movie">
-		<div><iframe  src="https://www.youtube.com/embed/TVestUtYfto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-		<div><iframe src="https://www.youtube.com/embed/U66ba9fy1Vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-		<div><iframe  src="https://www.youtube.com/embed/ooPAb80CbvA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-		<div><iframe src="https://www.youtube.com/embed/jb0LtCE7aQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
-		<div><iframe src="https://www.youtube.com/embed/p5OQReaKPKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+<div class="mural">
+		<span class="spanbtn"><button class="btn" id="button"><a href="javascript:clickmenu()" class="color"><i class="fa fa-2x fas fa-bars"></i></a></button></span>
+		<div id="menu1"> 
+			<ul class="ulm">
+				<li><a href="home.html"><i class="fas fa-caret-right"></i> INICIO</a></li>
+				<li><a href="personajes.html"><i class="fas fa-caret-right"></i> PERSONAJES</a></li>
+				<li><a href="stage.html"><i class="fas fa-caret-right"></i> ESCENARIOS</a></li>
+				<li><a href="puzzle.html"><i class="fas fa-caret-right"></i> PUZZLE</a></li>
+				<li><a href="comentarios.html"><i class="fas fa-caret-right"></i> COMENTARIOS</a></li>
+				<li><a href="reseña.html"><i class="fas fa-caret-right"></i> RESEÑAS</a></li>
+				<li><a href="videos.html"><i class="fas fa-caret-right"></i> VIDEOS</a></li>
+				</li>
+			</ul>
+		</div>
 	</div>
-
+	<script>
+		function clickmenu() {
+			document.getElementById("menu1").classList.toggle('active');
+		}
+	</script>
+<div class="cell">
+	<div class="movie">
+		<h2>Trailer oficial</h2>
+		<div><iframe src="https://www.youtube.com/embed/S7WM7_PEvAo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<h2>Película completa en español latino</h2>
+		<div><iframe src="https://www.youtube.com/embed/p5OQReaKPKs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<h2>Finales de Injustice</h2>
+		<div><iframe src="https://www.youtube.com/embed/5s_GBFx2pgY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<h2>Resumen The Top comics</h2>
+		<div><iframe src="https://www.youtube.com/embed/jb0LtCE7aQw" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<h2>Curiosidades</h2>
+		<div><iframe src="https://www.youtube.com/embed/U66ba9fy1Vo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+		<h2>Video Análisis de Meri Station</h2>
+		<div><iframe  src="https://www.youtube.com/embed/TVestUtYfto" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+	</div>
+</div>
 <footer>
-	Copyright Todos los Derechos Reservados
+	<div>
+		<p>Este es un videojuego desarrollado por: </p>
+		<div class="youtube">
+			<a href="https://www.warnerbros.com/" target="_blank"><img src="wbgames.png" alt="Warner" class="logo"></a>
+			<a href="https://www.dccomics.com/" target="_blank"><img src="dc.png" alt="Dc" class="logo"></a>
+			<a href="https://www.netherrealm.com/" target="_blank"><img src="nreal.png" alt="Unreal" class="logo"></a>
+		</div>
+		<div >
+			<p>
+				Este juego puede adquirirlo en las siguientes plataformas:
+			</p>
+		<div class="youtube">
+			<a href="https://www.playstation.com/es-bo/games/injustice-gods-among-us-ultimate-edition-ps4/" target="_blank"><img src="logops.png" alt="playstation4" class="logo"></a>
+			<a href="https://marketplace.xbox.com/en-US/Product/Injustice-Gods-Among-Us/66acd000-77fe-1000-9115-d80257520829?ref=dtf.ru" target="_blank"><img src="xbox.png" alt="xbox one" class="logo"></a>
+			<a href="https://store.steampowered.com/app/242700/Injustice_Gods_Among_Us_Ultimate_Edition/" target="_blank"><img src="pc.jpg" alt="PC" class="logo"></a></div>
+		</div>
+	</div>
+	<!--https://www.mclibre.org/consultar/htmlcss/css/css-bordes.html-->
+	<div class="youtube"><p>Copyright 2020 </p><p class="imp">&nbsp;&nbsp;By: @DC_fangirl</p><a href="https://www.facebook.com/" target="_blank"><img src="iface.png" alt="Facebook" class="minilog"></a>
+		<a href="https://www.instagram.com/" target="_blank"><img src="iinsta.png" alt="Instagram" class="minilog"></a>
+		<a href="https://twitter.com/?lang=es" target="_blank"><img src="itwt.png" alt="Twiter" class="minilog"></a>
+		</div>
+	<div class="youtube"><p> Todos los Derechos Reservados - Prohibida la reproducción total o parcial de estos contenidos sin el permiso expreso de los autores.
+	</div></p>
 </footer>
 </body>
 </html>
